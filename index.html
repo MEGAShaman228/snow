@@ -7,11 +7,10 @@
 <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
 </head>
 <body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'>
     <a-assets>
         <img id="erth" src="img/map.png">
         <img id="moon" src="img/moon.jpg">
-        <a-asset-item id="tree" src="vase.glb"></a-asset-item>
       </a-assets>
     <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
     <a-entity gps-new-entity-place="latitude: 59.715214; longitude: 30.413768">
